@@ -1,225 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CompuTodo</title>
-        
-        <!-- Link del CSS -->
-        <link rel="stylesheet" href="./ComputodoFrontend/estilos/styless.css">
-        
-        <!-- Icono de Falticon -->
-        <link rel="icon" href="./imagenes/ordenador-portatil.png">
-        
-        <!-- Codigo de la Fuente: Oswalt -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap" rel="stylesheet">
-        
-        <!-- Código de la Fuente PT Sans -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        
-        <!-- botones Slider -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-        <!-- JS de Slider -->
-        <script src="./js/slider.js" defer></script>
-        
-        <!-- Icono de Whats app -->
-        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas</title>
+<!-- Link de CSS -->
+    <link rel="stylesheet" href="../styless.css">
+    <link rel="stylesheet" href="../estilosPaginas/productos.css">
+    <!-- Icono de Falticon -->
+    <link rel="icon" href="../imagenes/ordenador-portatil.png">
+    <!-- Icono de Whats app -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
 
-    <body>
-        <!-- ----------------------------------------------- -->
-        <!-- ENCABEZADO Y MENU DE NAVEGACIÓN CON DESPLEGABLE -->
-        <header>
-            <div class="encabezado">
-                <a href="index.html" > <img src="./imagenes/logo1.jpg" alt="logo de la tienda" class="img1"> </a>
-                <h1>CompuTodo < > </h1>
-            </div>
-            
-            <!-- menu hamburguesa -->
-            <div class="hamburger">
-                <input type="checkbox" id="toggle">
-                <label for="toggle">&#9776;</label>
-            </div>
-            
-            <nav class="navegacion">
-                <!-- Menú principal -->
-                <ul class="menu" id="mi-menu-desplegable">
-                    <li> <a href="##">Home</a> </li>
-                    
-                    <!-- Menú desplegable -->
-                    <li> <a href="##">Productos</a> 
-                        <ul class="submenu1">
-                            <li> <a href="./ComputodoFrontend/paginas/monitores.html">Monitores</a> </li>
-                            <li> <a href="./ComputodoFrontend/paginas/gabinetes.html">Gabinetes</a> </li>
-                            <li> <a href="./ComputodoFrontend/paginas/impresoras.html">Impresoras</a> </li>
-                            <li> <a href="./ComputodoFrontend/paginas/perifericos.html">Perifericos</a> </li>
-                            <li> <a href="./ComputodoFrontend/paginas/cables.html">Cables</a> </li>
-                            <!-- Revisar por si queremos agregar algo -->
-                        </ul>
-                    </li>
-                    <!-- Fin menú desplegable -->
-                    <li> <a href="./ComputodoFrontend/paginas/ofertas.html">Ofertas</a> </li>
-                    <li> <a href="./ComputodoFrontend/paginas/contacto.html">Contacto</a> </li>
-                    <li> <a href="./ComputodoFrontend/paginas/dondeEstamos.html">Donde estamos</a> </li>
-                    <li> <a href="./productos.html">Gestión de Productos</a> </li>
-                    <!-- En la opcion de contacto que tire la pagina al formulario para validar con JS (pedido en el TPO) -->
-                    <!-- Revisar el menu para ver si se agrega algo -->
-                    
-                </ul>
-                <!-- Botón para buscar y buscador  -->
-                <div class="contenedor-buscador">
-                    <input class="buscador" type="text" placeholder="Buscar">
-                    <input class="boton1" type="submit" value="Buscar">
-                </div>
-            </nav>
-        </header>
-        <!-- -------------------------------- -->
-            <!-- CUERPO PRINCIPAL: SLIDER Y CARDS -->
-        <main>
-
-            <!-- SLIDER -->
-            <div class="sliderContainer">
-                <div class="sliderImg" data-slide>
-                    <img src="./imagenes/imgSlider/promoahora12.jpg" alt="" class="imgSlider">
-                </div>
-                <div class="sliderImg" data-slide>
-                    <img src="./imagenes/imgSlider/envios.png" alt="" class="imgSlider">
-                </div>
-                <div class="sliderImg" data-slide>
-                    <img src="./imagenes/imgSlider/marcas.png" alt="" class="imgSlider">
-                </div>
-                <div class="sliderImg" data-slide>
-                    <img src="./imagenes/imgSlider/productos.png" alt="" class="imgSlider">
-                </div>
-                <div class="sliderImg" data-slide>
-                    <img src="./imagenes/imgSlider/hotsale.jpg" alt="" class="imgSlider">
-                </div>
+    <!-- ----------------------------------------------- -->
+    <!-- ENCABEZADO Y MENU DE NAVEGACIÓN CON DESPLEGABLE -->
+    <header>
+        <div class="encabezado">
+            <a href="../index.html" > <img src="../imagenes/logo1.jpg" alt="logo de la tienda" class="img1"> </a>
+            <h1>CompuTodo < > </h1>
+        </div>
+        
+        <!-- menu hamburguesa -->
+        <div class="hamburger">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">&#9776;</label>
+        </div>
+        
+        <nav class="navegacion">
+            <!-- Menú principal -->
+            <ul class="menu" id="mi-menu-desplegable">
+                <li> <a href="##">Home</a> </li>
                 
-                <button class="btn Atras" data-button="atras">
-                    <span class="fas fa-chevron-circle-left"></span>
-                  </button>
-                  <button class="btn Siguiente" data-button="siguiente">
-                    <span class="span fas fa-chevron-circle-right"></span>
-                  </button>
+                <!-- Menú desplegable -->
+                <li> <a href="##">Productos</a> 
+                    <ul class="submenu1">
+                        <li> <a href="./monitores.html">Monitores</a> </li>
+                        <li> <a href="./gabinetes.html">Gabinetes</a> </li>
+                        <li> <a href="./impresoras.html">Impresoras</a> </li>
+                        <li> <a href="./perifericos.html">Perifericos</a> </li>
+                        <li> <a href="./cables.html">Cables</a> </li>
+                        <!-- Revisar por si queremos agregar algo -->
+                    </ul>
+                </li>
+                <!-- Fin menú desplegable -->
+                <li> <a href="./ofertas.html">Ofertas</a> </li>
+                <li> <a href="./contacto.html">Contacto</a> </li>
+                <li> <a href="./dondeEstamos.html">Donde estamos</a> </li>
+                <!-- En la opcion de contacto que tire la pagina al formulario para validar con JS (pedido en el TPO) -->
+                <!-- Revisar el menu para ver si se agrega algo -->
                 
+            </ul>
+            <!-- Botón para buscar y buscador  -->
+            <div class="contenedor-buscador">
+                <input class="buscador" type="text" placeholder="Buscar">
+                <input class="boton1" type="submit" value="Buscar">
             </div>
-            
-            <!-- CARDS!!! -->
-                <div class="container">
-                    
-                    <!-- MONITORES -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./imagenes/imgCards/monitor.png" alt="Monitores">
-                                <h3>Monitores</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Todas las medidas y modelos de monitores que necesites para trabajar, estudiar y jugar.</p>
-                                <a href="./paginas/monitores.html" >Ver más</a> 
-                            </div>
-                        </div>
-                    </div>
+        </nav>
+    </header>
+    <!-- -------------------------------- -->
+    <main>
+        <div class="webPreparacion">
+            <img src="../imagenes/webconstruccion.jpg" alt="Web en preparación">
+        </div>
 
-                    <!-- GABINETES -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./imagenes/imgCards/gabinete.png" alt="Gabinetes">
-                                <h3>Gabinetes</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Gabinetes de todos los tamaños, colores y diseños exclusivos para armar una compu a tu medida.</p>
-                                <a href="./paginas/gabinetes.html" >Ver más</a> 
-                            </div>
-                        </div>
-                    </div>
+        <!-- Icono de whats app -->
+        <div class="icono-wsp">
+            <a href="https://api.whatsapp.com/send/?phone=5491123249568&text=Hola%20buen%20día,%20quería%20consultar%20por%20el%20siguiente%20producto:" class="btn-wsp" target="_blank">
+                <i class="fa fa-whatsapp icono"></i>
+            </a>
+        </div>
 
-                    <!-- IMPRESORAS -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./imagenes/imgCards/impresoras.png" alt="Impresoras">
-                                <h3>Impresoras</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Amplia variedad de impresoras y equipos multifunción para el hogar o la oficina.</p>
-                                <a href="./paginas/impresoras.html" >Ver más</a> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PERIFERICOS -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./imagenes/imgCards/perifericos.png" alt="Perifericos">
-                                <h3>Perifericos</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Todos los accesorios que necesitas para completar tu setup.</p>
-                                <a href="./paginas/perifericos.html">Ver más</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CONTACTO -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./imagenes/imgCards/contacto.png" alt="Contacto">
-                                <h3>Contacto</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Comunícate con nosotros para estar enterado de las últimas novedades y productos del mundo IT.</p>
-                                <a href="./paginas/contacto.html">Ver más</a> 
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- DONDE ESTAMOS -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./imagenes/imgCards/ubicacion.png" alt="Donde estamos">
-                                <h3>Donde estamos</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Conoce nuestra sucursal principal donde podrás retirar o comprar nuestros productos.</p>
-                                <a href="./paginas/dondeEstamos.html">Ver más</a> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Icono de whats app -->
-                <div class="icono-wsp">
-                    <a href="https://api.whatsapp.com/send/?phone=5491123249568&text=Hola%20buen%20día,%20quería%20consultar%20por%20el%20siguiente%20producto:" class="btn-wsp" target="_blank">
-                        <i class="fa fa-whatsapp icono"></i>
-                    </a>
-                </div>
-        </main>
-
-        <!-- --------------------------- -->
+    </main>
+    <!-- --------------------------- -->
         <!-- FOOTER -->
         
         <footer class="footer">
@@ -228,7 +84,7 @@
                 
                 <div class="logoMarca">
                     <h4>CompuTodo</h4>
-                    <a href="index.html" > <img src="./imagenes/logo1.jpg" alt="logo de la tienda" class="img1"> </a>
+                    <a href="../index.html" > <img src="../imagenes/logo1.jpg" alt="logo de la tienda" class="img1"> </a>
                     <address class="direccionBSAS">
                         <p>Buenos Aires / Capital Federal</p>  
                         <p>+54 9 11 2324-9568</p> 
@@ -246,12 +102,12 @@
                 <div class="footerNavegacion">
                     <h4>Navegación</h4>
                     <ul class="footerNavbar">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./paginas/monitores.html">Monitores</a></li>
-                        <li><a href="./paginas/gabinetes.html">Gabinetes</a></li>
-                        <li><a href="./paginas/impresoras.html">Impresoras</a></li>
-                        <li><a href="./paginas/contacto.html">Contacto</a></li>
-                        <li><a href="./paginas/dondeEstamos.html">Donde estamos</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./monitores.html">Monitores</a></li>
+                        <li><a href="./gabinetes.html">Gabinetes</a></li>
+                        <li><a href="./impresoras.html">Impresoras</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./dondeEstamos.html">Donde estamos</a></li>
                     </ul>
                 </div>
                 
@@ -262,7 +118,6 @@
                     <a href="##"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M2 20H22V22H2V20ZM4 12H6V19H4V12ZM9 12H11V19H9V12ZM13 12H15V19H13V12ZM18 12H20V19H18V12ZM2 7L12 2L22 7V11H2V7ZM4 8.23607V9H20V8.23607L12 4.23607L4 8.23607ZM12 8C11.4477 8 11 7.55228 11 7C11 6.44772 11.4477 6 12 6C12.5523 6 13 6.44772 13 7C13 7.55228 12.5523 8 12 8Z" fill="rgba(255,255,255,1)"></path></svg> </a>
                     <a href="##"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M19.3788 15.1057C20.9258 11.442 19.5373 7.11425 16.0042 5.07444C13.4511 3.6004 10.4232 3.69359 8.03452 5.05554L7.04216 3.31873C10.028 1.61633 13.8128 1.49984 17.0042 3.34239C21.4949 5.93507 23.2139 11.4848 21.1217 16.1119L22.4635 16.8866L18.2984 19.1007L18.1334 14.3866L19.3788 15.1057ZM4.62961 8.89962C3.08263 12.5633 4.47116 16.891 8.00421 18.9308C10.5573 20.4049 13.5851 20.3117 15.9737 18.9499L16.9661 20.6866C13.9803 22.389 10.1956 22.5054 7.00421 20.6629C2.51357 18.0702 0.794565 12.5205 2.88672 7.89336L1.54492 7.11867L5.70999 4.90457L5.87505 9.61867L4.62961 8.89962ZM8.50421 14.0026H14.0042C14.2804 14.0026 14.5042 13.7788 14.5042 13.5026C14.5042 13.2265 14.2804 13.0026 14.0042 13.0026H10.0042C8.6235 13.0026 7.50421 11.8834 7.50421 10.5026C7.50421 9.12193 8.6235 8.00265 10.0042 8.00265H11.0042V7.00265H13.0042V8.00265H15.5042V10.0026H10.0042C9.72807 10.0026 9.50421 10.2265 9.50421 10.5026C9.50421 10.7788 9.72807 11.0026 10.0042 11.0026H14.0042C15.3849 11.0026 16.5042 12.1219 16.5042 13.5026C16.5042 14.8834 15.3849 16.0026 14.0042 16.0026H13.0042V17.0026H11.0042V16.0026H8.50421V14.0026Z" fill="rgba(255,255,255,1)"></path></svg> </a>
                 </div>
-
             </div>
                 
             <div class="footerFila">
@@ -271,13 +126,5 @@
             
         </footer>
 
-
-    </body>
+</body>
 </html>
-
-<!-- mail de los intefrantes del grupo 
-amjel105@gmail.com
-leooponce0307@gmail.com
-heydimagali@outlook.com
-juliblazquez2004@gmail.com
--->
