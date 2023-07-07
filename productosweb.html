@@ -5,9 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CompuTodo</title>
+
+        <!-- Link de Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         
         <!-- Link del CSS -->
-        <link rel="stylesheet" href="./ComputodoFrontend/estilos/styless.css">
+        <link rel="stylesheet" href="./ComputodoFrontend/estilos/styles.css">
         
         <!-- Icono de Falticon -->
         <link rel="icon" href="./imagenes/ordenador-portatil.png">
@@ -50,10 +54,11 @@
             <nav class="navegacion">
                 <!-- Menú principal -->
                 <ul class="menu" id="mi-menu-desplegable">
-                    <li> <a href="##">Home</a> </li>
+                    <li> <a href="index.html">Home</a> </li>
                     
                     <!-- Menú desplegable -->
-                    <li> <a href="./productosweb.html">Productos</a></li>
+                    <li> <a href="../paginas/productosweb.html">Productos</a>
+                    </li>
                     <!-- Fin menú desplegable -->
                     <li> <a href="./ComputodoFrontend/paginas/ofertas.html">Ofertas</a> </li>
                     <li> <a href="./ComputodoFrontend/paginas/contacto.html">Contacto</a> </li>
@@ -71,143 +76,27 @@
             </nav>
         </header>
         <!-- -------------------------------- -->
-            <!-- CUERPO PRINCIPAL: SLIDER Y CARDS -->
+            <!-- CUERPO PRINCIPAL: CARDS -->
         <main>
-
-            <!-- SLIDER -->
-            <div class="sliderContainer">
-                <div class="sliderImg" data-slide>
-                    <img src="./ComputodoFrontend/imagenes/imgSlider/promoahora12.jpg" alt="" class="imgSlider">
-                </div>
-                <div class="sliderImg" data-slide>
-                    <img src="./ComputodoFrontend/imagenes/imgSlider/envios.png" alt="" class="imgSlider">
-                </div>
-                <div class="sliderImg" data-slide>
-                    <img src="./ComputodoFrontend/imagenes/imgSlider/marcas.png" alt="" class="imgSlider">
-                </div>
-                <div class="sliderImg" data-slide>
-                    <img src="./ComputodoFrontend/imagenes/imgSlider/productos.png" alt="" class="imgSlider">
-                </div>
-                <div class="sliderImg" data-slide>
-                    <img src="./ComputodoFrontend/imagenes/imgSlider/hotsale.jpg" alt="" class="imgSlider">
-                </div>
-                
-                <button class="btn Atras" data-button="atras">
-                    <span class="fas fa-chevron-circle-left"></span>
-                  </button>
-                  <button class="btn Siguiente" data-button="siguiente">
-                    <span class="span fas fa-chevron-circle-right"></span>
-                  </button>
-                
+            <div id="app" class="container">
+                <h1>Productos</h1>
+                <section v-else>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col" v-for="producto in productos">
+                            <div class="card h-100">
+                                <img :src="producto.imagen" class="card-img-top" :alt="producto.nombre">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{producto.nombre}}</h5>
+                                    <p class="card-text">{{producto.descripcion}}</p>
+                                    <p class="card-text">{{producto.precio}}</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            
-            <!-- CARDS!!! -->
-                <div class="container">
-                    
-                    <!-- MONITORES -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./ComputodoFrontend/imagenes/imgCards/monitor.png" alt="Monitores">
-                                <h3>Monitores</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Todas las medidas y modelos de monitores que necesites para trabajar, estudiar y jugar.</p>
-                                <a href="./paginas/monitores.html" >Ver más</a> 
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- GABINETES -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./ComputodoFrontend/imagenes/imgCards/gabinete.png" alt="Gabinetes">
-                                <h3>Gabinetes</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Gabinetes de todos los tamaños, colores y diseños exclusivos para armar una compu a tu medida.</p>
-                                <a href="./paginas/gabinetes.html" >Ver más</a> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- IMPRESORAS -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./ComputodoFrontend/imagenes/imgCards/impresoras.png" alt="Impresoras">
-                                <h3>Impresoras</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Amplia variedad de impresoras y equipos multifunción para el hogar o la oficina.</p>
-                                <a href="./paginas/impresoras.html" >Ver más</a> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PERIFERICOS -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./ComputodoFrontend/imagenes/imgCards/perifericos.png" alt="Perifericos">
-                                <h3>Perifericos</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Todos los accesorios que necesitas para completar tu setup.</p>
-                                <a href="./paginas/perifericos.html">Ver más</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CONTACTO -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./ComputodoFrontend/imagenes/imgCards/contacto.png" alt="Contacto">
-                                <h3>Contacto</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Comunícate con nosotros para estar enterado de las últimas novedades y productos del mundo IT.</p>
-                                <a href="./paginas/contacto.html">Ver más</a> 
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- DONDE ESTAMOS -->
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="./ComputodoFrontend/imagenes/imgCards/ubicacion.png" alt="Donde estamos">
-                                <h3>Donde estamos</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <p>Conoce nuestra sucursal principal donde podrás retirar o comprar nuestros productos.</p>
-                                <a href="./paginas/dondeEstamos.html">Ver más</a> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Icono de whats app -->
-                <div class="icono-wsp">
-                    <a href="https://api.whatsapp.com/send/?phone=5491123249568&text=Hola%20buen%20día,%20quería%20consultar%20por%20el%20siguiente%20producto:" class="btn-wsp" target="_blank">
-                        <i class="fa fa-whatsapp icono"></i>
-                    </a>
-                </div>
         </main>
 
         <!-- --------------------------- -->
@@ -219,7 +108,7 @@
                 
                 <div class="logoMarca">
                     <h4>CompuTodo</h4>
-                    <a href="index.html" > <img src="./ComputodoFrontend/imagenes/logo1.jpg" alt="logo de la tienda" class="img1"> </a>
+                    <a href="index.html" > <img src="../ComputodoFrontend/imagenes/logo1.jpg" alt="logo de la tienda" class="img1"> </a>
                     <address class="direccionBSAS">
                         <p>Buenos Aires / Capital Federal</p>  
                         <p>+54 9 11 2324-9568</p> 
@@ -261,6 +150,15 @@
             </div>
             
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+        <script src="./js/productos.js"></script>
 
 
     </body>
