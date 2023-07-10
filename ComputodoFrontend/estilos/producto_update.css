@@ -185,15 +185,14 @@ label {
 
 input {
     border: 1px solid;
-    border-radius: 3px;
+    border-radius: 5px;
     padding-left: 15px;
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    
+
 }
+
 
 /* ------------------------------------- */
 /* ------------ FOOTER ----------------- */ 

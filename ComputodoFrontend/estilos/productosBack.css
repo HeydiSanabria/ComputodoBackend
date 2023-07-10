@@ -145,6 +145,38 @@ h1 {
   }
 
 /* ------------------------------------- */
+/* -------------BOTONES -----------------*/
+/* ------------------------------------- */
+.editar {
+    background-color: #11Ace2;
+    padding: 4px;
+    border:#11Ace2 solid 1px;
+    color: var(--negro);
+    margin-right: 8px;
+}
+
+.eliminar {
+    background-color: red;
+    padding: 4px;
+    border: red solid 1px;
+    color: var(--negro);
+}
+
+.editar:hover {
+    color: black !important;
+    font-weight: bolder;
+    cursor: pointer;
+    font-variant: small-caps;
+}
+
+.eliminar:hover {
+    color: black !important;
+    font-weight: bolder;
+    cursor: pointer;
+    font-variant: small-caps;
+}
+
+/* ------------------------------------- */
 /* ------------ FOOTER ----------------- */ 
 /* ------------------------------------- */
 
