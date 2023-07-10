@@ -162,17 +162,38 @@ h2 {
 
 form {
     background-color: rgb(192, 208, 223);
-    margin:10px auto;
+    margin:10px auto; 
     width: 400px;
     padding: 20px;
     border: var(--gris) solid 3px;
     border-radius: 10px;
 }
 
-label {
-
+p {
+    color: var(--negro);
+    font-size: medium;
+    padding: 3px 15px 3px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+label {
+    color: var(--negro);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px 15px 3px 20px;
+    font-size: medium;
+}
+
+input {
+    border: 1px solid;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    
+}
 
 /* ------------------------------------- */
 /* ------------ FOOTER ----------------- */ 
