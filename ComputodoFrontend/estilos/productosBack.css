@@ -147,12 +147,14 @@ h1 {
 /* ------------------------------------- */
 /* -------------BOTONES -----------------*/
 /* ------------------------------------- */
+
+/* -----BOTON EDITAR Y ELIMINAR----- */
 .editar {
     background-color: #11Ace2;
     padding: 4px;
     border:#11Ace2 solid 1px;
     color: var(--negro);
-    margin-right: 8px;
+    margin: 15px 30px 15px 15px;
 }
 
 .eliminar {

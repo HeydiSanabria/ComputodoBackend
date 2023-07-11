@@ -147,7 +147,14 @@ h1 {
 /* -------------------------------------- */
 /* -------------TABLA CENTRAL------------ */
 /* -------------------------------------- */
+/* Tabla de Alta Producto (h1) */
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
 
+/* Tabla de Edición Producto (h2) */
 h2 {
     display: flex;
     justify-content: center;
@@ -163,7 +170,7 @@ h2 {
 form {
     background-color: rgb(192, 208, 223);
     margin:10px auto; 
-    width: 400px;
+    width: 410px;
     padding: 20px;
     border: var(--gris) solid 3px;
     border-radius: 10px;
@@ -189,10 +196,11 @@ input {
     padding-left: 15px;
 }
 
-.btn {
-
+button {
+    display: flex;
+    justify-content: center;
+    
 }
-
 
 /* ------------------------------------- */
 /* ------------ FOOTER ----------------- */ 
